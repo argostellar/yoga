@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Geometria";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("Roboto Condensed"),
+    url("../fonts/geometriamedium.woff2") format("woff2"),
+    url("../fonts/geometriamedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local("Roboto Condensed"),
+    url("../fonts/geometriabold.woff2") format("woff2"),
+    url("../fonts/geometriabold.woff") format("woff");
+}

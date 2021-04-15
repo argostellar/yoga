@@ -1,0 +1,85 @@
+@mixin geometria-font {
+  font-family: "Geometria", "Arial", sans-serif;
+}
+
+@mixin caveat-font {
+  font-family: "Caveat", "Brush Script MT", cursive;
+}
+
+@mixin page-main-font {
+  @include geometria-font;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+@mixin clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-space {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin mobile-space {
+  margin: 0 15px;
+}
+
+@mixin tablet-space {
+  margin: 0 30px;
+}
+
+@mixin desktop-space {
+  margin: 0 110px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+@mixin desktop-container {
+  width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin tablet-container {
+  width: auto;
+  margin: 0 25px;
+  padding: 0;
+}
+
+@mixin active-states {
+  &:hover,
+  &:focus {
+    color: $lilac;
+    border-color: $lilac;
+    fill: $lilac;
+  }
+
+  &:active {
+    color: rgba($lilac, 0.4);
+    border-color: rgba($lilac, 0.4);
+    fill: rgba($lilac, 0.4);
+  }
+}
+
+@mixin empty-rule {
+  hyphens: auto;
+}
+
+@mixin redline {
+  outline: 1px solid red;
+}
